@@ -49,11 +49,15 @@ The odometer data is nonsense. I assume that there are bugs in the computation b
 
 ### 展示の際の手順
 　Google Home Miniの設定
+
 1.　google home mini の初期化（機器裏側の分かりにくい小さいボタンを長押し）。 ← これが一番確実
+
 2.　スマホの設定から、pim.shimane@gmail.comのアカウントにログイン。
+
 3.　GoogleHomeのスマホアプリからgoogle home mini のセットアップを行う。
 
 　NODE-REDの設定
+
 5.　raspberry pi のwi-fi設定を行うために以下のコマンドを叩く。
 
     wpa_passphrase MYSSID passphrase > /etc/wpa_supplicant/example.conf
