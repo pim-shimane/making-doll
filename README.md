@@ -48,7 +48,7 @@ I tested these scripts using this [cable](http://store.irobot.com/communication-
 The odometer data is nonsense. I assume that there are bugs in the computation because its off way too much to count it as cumulative error.
 
 ### 展示の際の手順
-　Google Home Miniの設定
+　■ Google Home Miniの設定
 
 1.　google home mini の初期化（機器裏側の分かりにくい小さいボタンを長押し）。 ← これが一番確実
 
@@ -56,15 +56,15 @@ The odometer data is nonsense. I assume that there are bugs in the computation b
 
 3.　GoogleHomeのスマホアプリからgoogle home mini のセットアップを行う。
 
-　NODE-REDの設定
+　■ NODE-REDの設定
 
 5.　raspberry pi のwi-fi設定を行うために以下のコマンドを叩く。
 
     wpa_passphrase MYSSID passphrase > /etc/wpa_supplicant/example.conf
     sudo reboot
 
-4.　NODE-REDのスタートコマンドを叩く
+6.　NODE-REDのスタートコマンドを叩く
 
     node-red-start
 
-5.　[ここ](https://karaage.hatenadiary.jp/entry/2017/05/12/073000)で配線の最終確認。
+7.　[ここ](https://karaage.hatenadiary.jp/entry/2017/05/12/073000)で配線の最終確認。
