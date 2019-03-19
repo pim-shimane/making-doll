@@ -1,6 +1,6 @@
 import create
 import time
-ROOMBA_PORT="/dev/ttyUSB0"
+ROOMBA_PORT="/dev/ttyUSB1"
 robot = create.Create(ROOMBA_PORT)
 #robot.printSensors() # debug output
 

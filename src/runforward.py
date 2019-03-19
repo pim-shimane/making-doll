@@ -1,12 +1,17 @@
 import create
 import time
 
-ROOMBA_PORT="/dev/ttyUSB1"
+ROOMBA_PORT="/dev/ttyUSB0"
 robot = create.Create(ROOMBA_PORT)
 #robot.printSensors() # debug output
 wall_fun = robot.senseFunc(create.WALL_SIGNAL) # get a callback for a sensor.
 #print (wall_fun()) # print a sensor value.
 robot.toSafeMode()
-robot.go(0,100) # spin
+cnt = 0
+
+while cnt < 10 :
+    robot.go(100,0) # spin
+    cnt+=1
+    time.sleep(0.5)
 #time.sleep(2.0)
 robot.close()
