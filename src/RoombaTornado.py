@@ -8,10 +8,9 @@ wall_fun = robot.senseFunc(create.WALL_SIGNAL) # get a callback for a sensor.
 #print (wall_fun()) # print a sensor value.
 robot.toSafeMode()
 cnt = 0
-robot.go(0,-90)
 
 while cnt < 10 :
-    robot.go(100,0) # spin
+    robot.go(0,10) # spin
     cnt+=1
     time.sleep(0.5)
 #time.sleep(2.0)

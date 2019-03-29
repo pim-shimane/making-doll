@@ -1,13 +1,24 @@
-import create
+mport create
+
 import time
+
 ROOMBA_PORT="/dev/ttyUSB1"
+
 robot = create.Create(ROOMBA_PORT)
+
 #robot.printSensors() # debug output
 
+
+
 #  wall_fun = robot.senseFunc(create.WALL_SIGNAL) # get a callback for a sensor.
+
 #  print (wall_fun()) # print a sensor value.
 
+
+
 robot.toSafeMode()
+
+
 
 while True:
     direction = raw_input("h:left j:mae k:back l:right")
@@ -29,4 +40,3 @@ while True:
         time.sleep(2.0)
         robot.close()
         break
-
