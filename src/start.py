@@ -9,7 +9,6 @@ robot = create.Create(ROOMBA_PORT)
 
 robot.toSafeMode()
 
-
 print "start"
 robot._write(chr(128)) #start
 time.sleep(2.0)

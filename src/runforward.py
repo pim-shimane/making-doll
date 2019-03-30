@@ -12,6 +12,6 @@ cnt = 0
 while cnt < 10 :
     robot.go(100,0) # spin
     cnt+=1
-    time.sleep(0.5)
+    #time.sleep(0.5)
 #time.sleep(2.0)
 robot.close()
