@@ -51,20 +51,21 @@ The odometer data is nonsense. I assume that there are bugs in the computation b
 　■ Google Home Miniの設定
 
 1.　google home mini の初期化（機器裏側の分かりにくい小さいボタンを長押し）。 ← これが一番確実
-
 2.　スマホの設定から、pim.shimane@gmail.comのアカウントにログイン。
-
 3.　GoogleHomeのスマホアプリからgoogle home mini のセットアップを行う。
 
 　■ NODE-REDの設定
 
 5.　raspberry pi のwi-fi設定を行うために以下のコマンドを叩く。(もしかすると5GHz帯では繋がらないかも)
-
     wpa_passphrase [SSID] [password] > /etc/wpa_supplicant/wpa_supplicant.conf
     sudo reboot
-
 6.　NODE-REDのスタートコマンドを叩く
-
     node-red-start
-
 7.　[ここ](https://karaage.hatenadiary.jp/entry/2017/05/12/073000)で配線の最終確認。
+
+### 参考にしたページ
+
+今(2019/4月)のルンバを動かすためのプログラム等の参考先：https://tarukosu.hatenablog.com/entry/2017/09/10/222028break
+Serial Control Interface(SCI)で使えそうなコード資料：http://www.jonathanleroux.org/research/micbots/pyrobot2.py
+ROSで動かそうとしたときの資料：https://r17u.hatenablog.com/entry/2017/06/17/222228
+ラズパイにubuntu16.04載せた（結局rapsbianを使ったけどね）：https://www.asrobot.me/entry/2018/07/11/001603/
