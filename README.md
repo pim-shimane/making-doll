@@ -56,11 +56,15 @@ The odometer data is nonsense. I assume that there are bugs in the computation b
 
 　■ NODE-REDの設定
 
-5.　raspberry pi のwi-fi設定を行うために以下のコマンドを叩く。(もしかすると5GHz帯では繋がらないかも)  
+5.　raspberry pi のwi-fi設定を行うために以下のコマンドを叩く。(もしかすると5GHz帯では繋がらないかも)
+    
     wpa_passphrase [SSID] [password] > /etc/wpa_supplicant/wpa_supplicant.conf
-    sudo reboot  
-6.　NODE-REDのスタートコマンドを叩く  
+    sudo reboot
+
+6.　NODE-REDのスタートコマンドを叩く
+
     node-red-start  
+
 7.　[ここ](https://karaage.hatenadiary.jp/entry/2017/05/12/073000)で配線の最終確認。
 
 ### 参考にしたページ
