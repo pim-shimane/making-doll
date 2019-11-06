@@ -11,7 +11,7 @@ robot.toSafeMode()
 
 cnt = 0
 
-while cnt < 1000:
+while cnt < 10000:
     robot.go(0, 40)
     time.sleep(1.5)
     robot.go(0,-40)
