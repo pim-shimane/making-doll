@@ -10,7 +10,7 @@ robot.toSafeMode()
 cnt = 0
 
 while cnt < 10 :
-    robot.go(0,10) # spin
+    robot.go(0,5) # spin
     cnt+=1
-time.sleep(2.0)
+time.sleep(0.5)
 robot.close()
