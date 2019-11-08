@@ -25,7 +25,7 @@ servo = GPIO.PWM(gp_out, 50)
 servo.start(0.0)
 cnt = 0
 time.sleep(4)
-while cnt < 10000:
+while cnt < 21:
     servo.ChangeDutyCycle(12)
     time.sleep(1)
 
