@@ -1,5 +1,4 @@
 # Pythonコード使ってRoomba動かしてみた
-***
 　当レポのpythonコードのほぼ全てが[martinschaef/roomba](https://github.com/martinschaef/roomba)を参考に作られています。  
 　This repo's codes are from [martinschaef/roomba](https://github.com/martinschaef/roomba). We really appreciate the awesome repo!
 ### 展示の際の手順
