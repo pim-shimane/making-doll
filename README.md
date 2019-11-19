@@ -7,17 +7,17 @@
 - Google Home Miniの設定
 
 1.　google home mini の初期化（機器裏側の分かりにくい小さいボタンを長押し）。 ← これが一番確実  
-1.　スマホの設定から、pim.shimane@gmail.comのアカウントにログイン。  
-1.　GoogleHomeのスマホアプリからgoogle home mini のセットアップを行う。  
+2.　スマホの設定から、pim.shimane@gmail.comのアカウントにログイン。  
+3.　GoogleHomeのスマホアプリからgoogle home mini のセットアップを行う。  
 
 - NODE-REDの設定
 
-1.　raspberry pi のwi-fi設定を行うために以下のコマンドを叩く。(5GHz帯では繋がらないです)
+4.　raspberry pi のwi-fi設定を行うために以下のコマンドを叩く。(5GHz帯では繋がらないです)
     
     wpa_passphrase [SSID] [password] > /etc/wpa_supplicant/wpa_supplicant.conf
     sudo reboot
 
-1.　NODE-REDのスタートコマンドを叩く
+5.　NODE-REDのスタートコマンドを叩く
 
     node-red-start  
 
