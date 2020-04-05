@@ -57,14 +57,14 @@ MEASURE_TIME = MEASURE/64.
 def play_song(robot):
   song1 = [(a5,E),(f5,Q),(c5,E),(c5,Q),(a5,HALF),(r,S),(f5,E),(e5,E),(f5,E),(g5,Q),(f5,E),(g5,E),(a5,Q),(ais5,E),(b5,E),(c6,E)]
   song2 = [(a5,E),(g5,E),(f5,Q),(f5,Q),(d6,Q),(c6,Q),(f5,Q),(d5,Q),(ais5,Q),(a5,Q),(g5,Q),(f5,nHALF)]
-  song3 = [(g4,nHALF),(c6,E)]
-  song4 = [(f5,E),(gis5,E),(f5,E),(gis5,Q),(f5,E),(gis5,Q),(ais5,E),(ais5,E),(gis5,E),(ais5,Q),(b5,E),(ais5,E),(gis5,E),(fis5,E),(dis5,E),(f5,E)]
-  songx = [(g4,nHALF),(c6,E)]
+#  song3 = [(g4,nHALF),(c6,E)]
+#  song4 = [(f5,E),(gis5,E),(f5,E),(gis5,Q),(f5,E),(gis5,Q),(ais5,E),(ais5,E),(gis5,E),(ais5,Q),(b5,E),(ais5,E),(gis5,E),(fis5,E),(dis5,E),(f5,E)]
+#  songx = [(g4,nHALF),(c6,E)]
   print("uploading songs")
   robot.setSong( 1, song1 )
   robot.setSong( 2, song2 )
-  robot.setSong( 3, song3 )
-  robot.setSong( 4, song4 )
+#  robot.setSong( 3, song3 )
+#  robot.setSong( 4, song4 )
   time.sleep(2.0)
   print("playing part 1")
   robot.playSongNumber(1)
@@ -72,14 +72,15 @@ def play_song(robot):
   print("playing part 2")
   robot.playSongNumber(2)
   time.sleep(MEASURE_TIME*3)
-  robot.playSongNumber(3)
-  time.sleep(MEASURE_TIME)
-  son1 = songx
-  robot.setSong( 1, song1)
-  robot.playSongNumber(4)
-  time.sleep(MEASURE_TIME*3.2)
-  print("playing part 1")
-  robot.playSongNumber(1)
+#  print("playing part3")
+#  robot.playSongNumber(3)
+#  time.sleep(MEASURE_TIME)
+#  son1 = songx
+#  robot.setSong( 1, song1)
+#  robot.playSongNumber(4)
+#  time.sleep(MEASURE_TIME*3.2)
+#  print("playing part 1")
+#  robot.playSongNumber(1)
   print("done")
 
 robot = create.Create(ROOMBA_PORT)

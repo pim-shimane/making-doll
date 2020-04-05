@@ -42,45 +42,49 @@ fis6 = ges6 = 90
 
 # define some note lengths
 # change the top MEASURE (4/4 time) to get faster/slower speeds
-MEASURE = 240
+MEASURE = 80
 nHALF = MEASURE*2/3
 HALF = MEASURE/2
 nHALF = MEASURE*2/3
 HALF = MEASURE/2
 Q = MEASURE/4
+Qs = MEASURE/6
 E = MEASURE/8
-Ed = MEASURE*3/12
 S = MEASURE/12
 MEASURE_TIME = MEASURE/64.
 
 def play_song(robot):
-  song1 = [(d4,E),(d4,E),(d5,E),(r,S),(a4,E),(r,E),(ais4,E),(g4,E),(f4,Q),(d4,E),(f4,E),(g4,E)]
-  song2 = [(c4,E),(c4,E),(d5,E),(r,S),(a4,E),(r,E),(ais4,E),(g4,E),(f4,Q),(d4,E),(f4,E),(g4,E)]
-  song3 = [(b3,E),(b3,E),(d5,E),(r,S),(a4,E),(r,E),(ais4,E),(g4,E),(f4,Q),(d4,E),(f4,E),(g4,E)]
-  song4 = [(f4,Q),(f4,E),(f4,E),(r,S),(f4,Q),(f4,E),(d4,E),(d4,E),(r,HALF)]
-  song5 = [(f4,Q),(f4,E),(f4,E),(r,S),(g4,Q),(ais4,E),(ais4,E),(g4,E),(r,S),(f4,E),(g4,E),(r,HALF)
-  song6 = [(f4,Q),(f4,E),(f4,E),(g4,Q),(ais4,Q),(ais4,Q),(c5,Q),(a4,HALF),(d5,Q),(d5,S),(d5,E),(a4,E),(d5,E),(c5,E),(c5,S)]
+  song1 = [(d4,E),(d4,E),(d5,E),(r,E),(a4,E),(r,Qs),(gis4,E),(r,E),(g4,E),(r,E),(f4,Q),(d4,E),(f4,E),(g4,E)]
+  song2 = [(c4,E),(c4,E),(d5,E),(r,E),(a4,E),(r,Qs),(gis4,E),(r,E),(g4,E),(r,E),(f4,Q),(d4,E),(f4,E),(g4,E)]
+  song3 = [(b3,E),(b3,E),(d5,E),(r,E),(a4,E),(r,Qs),(gis4,E),(r,E),(g4,E),(r,E),(f4,Q),(d4,E),(f4,E),(g4,E)]
+  song4 = [(f4,Q),(f4,E),(f4,E),(r,E),(f4,E),(f4,Q),(d4,E),(r,E),(r,Q)]
+#  song5 = [(f4,Q),(f4,E),(f4,E),(r,E),(g4,Q),(ais4,E),(ais4,E),(g4,E),(r,S),(f4,E),(g4,E),(r,HALF)]
+#  song6 = [(f4,Q),(f4,E),(f4,E),(g4,Q),(ais4,Q),(ais4,Q),(c5,Q),(a4,HALF),(d5,Q),(d5,S),(d5,E),(a4,E),(d5,E),(c5,E),(c5,S)]
   print("uploading songs")
   robot.setSong( 1, song1 )
   robot.setSong( 2, song2 )
   robot.setSong( 3, song3 )
   robot.setSong( 4, song4 )
-  robot.setSong( 5, song5 )
-  robot.setSong( 6, song6 )
+#  robot.setSong( 5, song5 )
+#  robot.setSong( 6, song6 )
   time.sleep(2.0)
   print("playing part 1")
   robot.playSongNumber(1)
-  time.sleep(MEASURE_TIME*2.96)
+  time.sleep(MEASURE_TIME*1.94)
   print("playing part 2")
   robot.playSongNumber(2)
-  time.sleep(MEASURE_TIME*3)
+  time.sleep(MEASURE_TIME*1.94)
+  print("playing part 3")
   robot.playSongNumber(3)
-  time.sleep(MEASURE_TIME*3)
+  time.sleep(MEASURE_TIME*1.94)
+  print("playing part 4")
   robot.playSongNumber(4)
-  time.sleep(MEASURE_TIME*3)
-  robot.playSongNumber(5)
-  time.sleep(MEASURE_TIME*3)
-  robot.playSongNumber(6)
+  time.sleep(MEASURE_TIME*2)
+#  print("playing part 5")
+#  robot.playSongNumber(5)
+#  time.sleep(MEASURE_TIME*10)
+#  print("playing part 6")
+#  robot.playSongNumber(6)
   time.sleep(MEASURE_TIME*3)
 print("done")
 
